@@ -1,0 +1,14 @@
+//ReferenceError
+const reference = () => {
+  // BEGIN (write your solution here)
+  referenc (10);
+  // END
+};
+
+//TypeError
+const type = () => {
+  // BEGIN (write your solution here)
+    const num = 5;
+    num ();
+  // END
+};
