@@ -1,0 +1,11 @@
+// BEGIN (write your solution here)
+const square = (n) =>n*n; 
+const sumOfSquares=(n,m) =>square(n)+square(m); 
+const squareSumOfSquares =(n,m) =>square(sumOfSquares(n,m)); 
+// END
+
+export default {
+  square,
+  sumOfSquares,
+  squareSumOfSquares,
+};
