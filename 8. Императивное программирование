@@ -1,0 +1,16 @@
+// BEGIN (write your solution here)
+const smallestDivisor = (n) => {
+  let counter = 2;
+  if (n <= 0){
+    return NaN;
+  }
+  else if (n===1){
+    return 1;
+  }
+  else {
+  while (n % counter != 0) {
+    counter = counter + 1;
+  }
+  return counter;
+}}
+// END
