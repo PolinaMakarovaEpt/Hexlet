@@ -1,0 +1,17 @@
+const smallestDivisor = (num) => {
+  // BEGIN (write your solution here)
+  if (num === 1) {
+    return 1;
+  }
+  else {
+    const result = (count, del) => {
+      if (count % del === 0) {
+        return del;
+      }
+      return result(count, del+1);
+    }
+    return result(num,2);
+  }
+
+  // END
+};
