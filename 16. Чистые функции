@@ -1,0 +1,17 @@
+import { length, toUpperCase } from './strings';
+
+// BEGIN (write your solution here)
+let upStr = (str) => {
+  let a = '';
+  for (let i=0; i<length(str); i++){
+    if ((i==0)||(str[i-1]==' ')){
+      a+= toUpperCase(str[i]);
+    }
+    else {
+      a+= str[i];
+    }
+  }
+  return a;
+}
+export default upStr;
+// END
